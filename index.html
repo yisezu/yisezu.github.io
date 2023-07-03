@@ -1,26 +1,79 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>404</title>
-<style>
-	body{
-		background-color:#444;
-		font-size:14px;
-	}
-	h3{
-		font-size:60px;
-		color:#eee;
-		text-align:center;
-		padding-top:30px;
-		font-weight:normal;
-	}
-</style>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>蜘蛛日志在线分析工具-刀客源码网</title>
+<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="static/css/2014.css" type="text/css" rel="stylesheet" />
+<link href="static/css/web_style.css" rel="stylesheet" type="text/css" />
+<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/css/flash.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="static/js/menus.js"></script>
+<link rel="shortcut icon" href="../favicon.ico">
 
+</head>
 <body>
-<h3>404，您请求的文件不存在!</h3>
+<div class="wrap">
+	<div class="boxes3" id="left">网站URL：<font>[必须以“http://”开头，结尾不带“/”]</font><br />
+	<div>
+		<input type="text" value="" id="weburl_n" style="width:100%; height:20px;" />
+		<div id="weburl_n_c" class="tishinum" style="width:auto; margin-left:0px;"></div></div>
+		<div class="folderfile">日志文件：<font>[直接选择log、txt日志文件]</font><br />
+			<input name="file_n" class="file" id="file_n" type="file" style="width: 97%;height: 22px;" onChange="javascript:PreviewImage(this);" />
+		</div>	
+		<script language="javascript" src="static/js/base64encodedecode.js"></script>
+		<script language="javascript" src="static/js/file.js"></script>
+		<script language="javascript" src="static/js/22.js"></script>网站日志：<font>[*可手动粘贴到下面日志框内]　</font><a onclick="javascript:$('#logcode_n').val('');$('#logcode_n').css('display','block');logcode_str='';$('#file_n').val('');$('#shili_num_n').val('0');$('#loc_e_n').val('');logid='logcode_n';$('#center').attr('class','centerdiv');dpagehtml='';endstr='';duanstr='';enddatastr='';" href="javascript:;">清空/手动粘贴日志内容</a><br />
+		<textarea id="logcode_n" name="logcode_n" class="boxes" onclick="javascript:SelecttextTest(this)"></textarea>分析内容与日志蜘蛛属性：<br />
+		<textarea id="chaxunarray_n" name="chaxunarray_n" class="boxes2"></textarea>
+		<script language="javascript" src="static/js/12.js"></script>
+	</div>
+	<div style="float:left; width:76px;" id="center" class="centerdiv">
+		<div class="centertxt">日志分析</div>
+	</div>
+	<div class="boxes4" id="right">
+		<div class="adadad" id="No1fenxi"></div>
+		<input type="hidden" value="0" id="shili_num_n"  />
+		<div class="ssss">
+		<h2 class="adadadh2"><span style="color:#f47920">【蜘蛛日志在线分析工具】</span>建议日志文件在10MB以内的用户使用，以防卡顿。尽心小屋出品，必为精品。刀客源码网</h2>
+        <div class="asdd"><input type="text" value="300" id="max_n" class="asd" />
+		<div id="max_n_c" class="tishinum" ></div></div>
+        <div class="asdd"><input type="text" value="0" id="ipn_n" class="asd" />
+		<div id="ipn_n_c" class="tishinum" ></div></div>
+        <div class="asdd"><input type="text" value="0" id="time_n" class="asd" />
+		<div id="time_n_c" class="tishinum" ></div></div>
+        <div class="asdd"><input type="text" value="0" id="ztn_n" class="asd" />
+		<input type="hidden" value="0" id="csn_n"  />
+		<input type="hidden" value="0" id="ztn1_n" />
+		<input type="hidden" value="0" id="ztn2_n"  />
+		<div id="ztn_n_c" class="tishinum" ></div></div>
+        <div class="asdd"><input type="text" value="0" id="url_n" class="asd" />
+		<div id="url_n_c" class="tishinum" ></div></div>
+        <div class="asdd"><input type="text" value="0" id="uni_n" class="asd" />
+		<div id="uni_n_c" class="tishinum" ></div></div>
+        <div class="asdd">
+		<input type="text" value="100" id="page_n" class="asd" />
+		<input type="text" value="" id="so_n" class="asd" />
+		<input type="text" value="" id="sos_n" class="asd"  />
+		<input type="text" value="" id="soss_n" class="asd"  />
+		<div id="page_n_c" class="asdd"></div></div>
+        </div>
+		<div style="clear:both;"></div>
+		<div id="navhtml"></div>
+		<div id="infohtml"></div>
+		<div id="fenxihtml"></div>
+		<div id="pagehtml"></div>
+		<div class="aaaaaaaa"></div>
+	</div>
+</div>
+<script language="javascript" src="static/js/4.js"></script>
+<script language="javascript" src="static/js/1.js"></script>
+<script language="javascript" src="static/js/15.js"></script>
+<script language="javascript" src="static/js/20.js"></script>
+<script language="javascript" src="static/js/jq.js"></script>
+<script language="javascript" src="static/js/data.js"></script>
+<script language="javascript" src="static/js/fugaitishi.js"></script>
+<script language="javascript" src="static/js/tuiguang.js"></script>
 </body>
 </html>
